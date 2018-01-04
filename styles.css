@@ -1,0 +1,144 @@
+html {
+    background: url('https://images.pexels.com/photos/755726/pexels-photo-755726.jpeg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Orbitron', sans-serif;
+    color: #C3CDE6;
+  }
+
+h1 {
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+    background-color: darkslategrey;
+    text-align: center;
+    border-radius: 6px;
+}
+
+input[type=submit] {
+    background-color: grey;
+}
+
+input[type=reset] {
+    background-color: #5380ac;
+}
+
+#bottom_padding {
+  border: 1px;
+  height: 0;
+  box-shadow: 0 0 10px 1px black;
+  width: 6cm;
+}
+
+#reset_color {
+  background-color: #5FA777;
+}
+
+#colorPicker {
+  border-radius: 8px;
+}
+
+/* h1, h2 animation (inspiration:https://css-tricks.com/restart-css-animation/) */
+
+@keyframes my-animation {        
+  from {
+    opacity : 0;
+    left : -500px;
+  }
+  to {
+    opacity : 1;
+    left : 0;
+  }      
+}
+
+.run-animation {
+  position: relative;
+  animation: my-animation 2s ease;
+}
+
+#logo {
+  text-align: center;
+  font-family : Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+
+/* button and input styling (inspiration:https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover) */
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: #FFFAF0;
+}
+
+.input1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+}
+
+.input1:hover {
+    background-color: #4CAF50;
+    color: #FFFAF0;
+}
+
+.input2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+}
+
+.input2:hover {
+    background-color: #4CAF50;
+    color: #FFFAF0;
+}
+
+p {
+  border: 1px solid #BB3385;
+  border-radius: 6px;
+  display: inline;
+}
