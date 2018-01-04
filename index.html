@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>Pixel Art Maker!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:500" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="logo" class="run-animation">Lab: Pixel Art Maker</h1>
+
+  <h2 class="run-animation">Choose Grid Size</h2>
+
+  <form id="sizePicker">
+    Rows:
+    <input type="number" id="input_height" name="height" min="10" value="10" style="color:white"> Columns:
+    <input type="number" id="input_width" name="width" min="10" value="10" style="color:white">
+
+    <span onmouseover="PlaySound('lightSaberOn')" onmouseout="StopSound('lightSaberOn')">
+    <input type="submit" value="Create Grid" class="input1">
+      </span>
+
+    <span onmouseover="PlaySound('lightSaberOff')" onmouseout="StopSound('lightSaberOff')">
+    <input type="reset" onclick="resetGrid()" value="Reset Grid" class="input2">
+    </span>
+  </form>
+
+  <h2 class="run-animation">Pick A Color</h2>
+  <input type="color" id="colorPicker">
+  <button id="reset_color" class="button1" onclick="resetColor()" onmouseover="PlaySound('R2D2')" onmouseout="StopSound('R2D2')">Reset Color</button>
+
+  <h2 class="run-animation">Design Canvas</h2>
+  <table id="pixel_canvas"></table>
+  <hr id="bottom_padding">
+
+  <!-- Audio implementation :) -->
+  <p onmouseover="PlaySound('rancorEgg')" onmouseout="StopSound('rancorEgg')">May The Creativity Be With You!</p>
+
+  <audio id='rancorEgg' src='http://www.thesoundarchive.com/starwars/imperial_march.mp3' />
+
+  <audio id='lightSaberOn' src='http://www.thesoundarchive.com/starwars/light-saber-on.mp3' />
+
+  <audio id='lightSaberOff' src='http://www.thesoundarchive.com/starwars/light-saber-off.mp3' />
+
+  <audio id='R2D2' src='http://www.thesoundarchive.com/starwars/R2D2-yeah.mp3' />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="designs.js"></script>
+
+</body>
+
+</html>
