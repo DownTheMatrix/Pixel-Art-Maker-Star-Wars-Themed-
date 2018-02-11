@@ -92,5 +92,3 @@ function toggleMusic() {
   if (audioElem.paused) audioElem.play();
   else audioElem.pause();
 }
-
-// Right-click erase color function
