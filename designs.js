@@ -76,19 +76,19 @@ RESET_BUTTON.click(function(r) {
 
 // Extra: Sound effects
 function PlaySound(soundobj) {
-  var thissound = document.getElementById(soundobj);
+  const thissound = document.getElementById(soundobj);
   thissound.play();
 }
 
 function StopSound(soundobj) {
-  var thissound = document.getElementById(soundobj);
+  const thissound = document.getElementById(soundobj);
   thissound.pause();
   thissound.currentTime = 0;
 }
 
 // Toggle music button
 function toggleMusic() {
-  var audioElem = document.getElementById("rancorEgg");
+  const audioElem = document.getElementById("rancorEgg");
   if (audioElem.paused) audioElem.play();
   else audioElem.pause();
 }
