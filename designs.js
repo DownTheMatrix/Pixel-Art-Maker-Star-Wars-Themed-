@@ -1,4 +1,4 @@
-// Udacity Scolarship 2017: Bruno Mazza
+// Udacity Scholarship 2017: Bruno Mazza
 
 // Grid building (columns=width; rows=height)
 function makeGrid() {
@@ -69,6 +69,8 @@ SUBMIT_BUTTON.click(function(f) {
   makeGrid();
 });
 
+// Resets the grid
+const RESET_BUTTON = $("input[type = 'reset']");
 RESET_BUTTON.click(function(r) {
   r.preventDefault();
   resetGrid();
