@@ -1,3 +1,4 @@
+/* General Styling */
 html {
   background: url("https://images.pexels.com/photos/755726/pexels-photo-755726.jpeg?w=940&h=650&auto=compress&cs=tinysrgb")
     no-repeat center center fixed;
@@ -53,14 +54,18 @@ input[type="number"] {
   background-color: darkslategrey;
   text-align: center;
   border-radius: 6px;
+  color: #fff;
+  padding: 0.5em;
 }
 
 input[type="submit"] {
   background-color: grey;
+  padding: 0.5em;
 }
 
 input[type="reset"] {
   background-color: #5380ac;
+  padding: 0.5em;
 }
 
 #bottom_padding {
@@ -108,6 +113,7 @@ input[type="reset"] {
   color: black;
   border: 2px solid #4caf50;
   border-radius: 6px;
+  padding: 0.5em;
 }
 
 .button1:hover {
@@ -151,6 +157,7 @@ input[type="reset"] {
   color: black;
   border: 2px solid #4caf50;
   border-radius: 6px;
+  padding: 0.5em;
 }
 
 .button4:hover {
