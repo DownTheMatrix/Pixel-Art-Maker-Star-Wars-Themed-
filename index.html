@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Orbitron:500" rel="stylesheet">
 </head>
 
+<!-- Main Content -->
 <body>
   <h1 id="logo" class="run-animation">Galactic Pixel Art Maker</h1>
 
@@ -16,8 +17,8 @@
 
   <form id="sizePicker">
     Rows:
-    <input type="number" id="input_height" name="height" min="1" max="50" value="10" style="color:white"> Columns:
-    <input type="number" id="input_width" name="width" min="1" max="50" value="10" style="color:white">
+    <input type="number" id="input_height" name="height" min="1" max="50" value="10"> Columns:
+    <input type="number" id="input_width" name="width" min="1" max="50" value="10">
 
     <span onclick="PlaySound('lightSaberOn')">
     <input type="submit" value="Create Grid" class="input1">
@@ -36,7 +37,7 @@
   <table id="pixel_canvas"></table>
   <hr id="bottom_padding">
 
-  <!-- Audio implementation :) -->
+  <!-- Footer -->
   <p id="bottom_motto">May The Creativity Be With You!</p>
   <ul>
     <li>Single click to draw</li>
@@ -44,15 +45,13 @@
   </ul>
   <button class="button4" onclick="toggleMusic();">Toggle Music On/Off</button>
 
-  <audio loop id='rancorEgg' src='http://www.thesoundarchive.com/starwars/imperial_march.mp3' />
-  </audio>
-
+  <!-- Audio Files -->
+  <audio loop id='rancorEgg' src='http://www.thesoundarchive.com/starwars/imperial_march.mp3' /></audio>
   <audio id='lightSaberOn' src='http://www.thesoundarchive.com/starwars/light-saber-on.mp3' />
-
   <audio id='lightSaberOff' src='http://www.thesoundarchive.com/starwars/light-saber-off.mp3' />
-
   <audio id='R2D2' src='http://www.thesoundarchive.com/starwars/R2D2-yeah.mp3' />
 
+  <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="designs.js"></script>
 
