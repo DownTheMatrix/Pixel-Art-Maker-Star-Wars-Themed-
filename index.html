@@ -10,7 +10,6 @@
 </head>
 
 <!-- Main Content -->
-
 <body>
   <h1 id="logo" class="run-animation">Galactic Pixel Art Maker</h1>
 
@@ -19,7 +18,8 @@
 
   <form id="sizePicker">
     Rows:
-    <input type="number" id="input_height" name="height" min="1" max="50" value="10"> Columns:
+    <input type="number" id="input_height" name="height" min="1" max="50" value="10"> 
+    Columns:
     <input type="number" id="input_width" name="width" min="1" max="50" value="10">
 
     <span onclick="PlaySound('lightSaberOn')">
@@ -27,13 +27,13 @@
     </span>
 
     <span onclick="PlaySound('lightSaberOff')">
-      <input type="reset" onclick="resetGrid()" value="Reset Grid" class="input2">
+      <input type="reset" value="Reset Grid" class="input2">
     </span>
   </form>
 
   <h2 class="run-animation">Pick A Color</h2>
   <input type="color" id="colorPicker">
-  <button id="reset_color" class="button1" onclick="resetColor(); PlaySound('R2D2');">Reset Color</button>
+  <button id="reset_color" class="button1">Reset Color</button>
 
   <h2 class="run-animation">Design Canvas</h2>
   <table id="pixel_canvas"></table>
