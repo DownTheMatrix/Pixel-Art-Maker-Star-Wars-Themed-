@@ -51,29 +51,27 @@ function makeGrid() {
 // Selects Submit button
 const SUBMIT_BUTTON = $("input[type = 'submit']");
 
-// Selects Reset Grid button
+// Resets the grid
 function resetGrid() {
-  const RESET_BUTTON = $("input[type = 'reset']");
   $("#pixel_canvas").empty();
 }
 
+const RESET_BUTTON = $("input[type = 'reset']");
+RESET_BUTTON.click(function(r) {
+  r.preventDefault();
+  resetGrid();
+});
+
 // Selects Reset Color button
-function resetColor() {
-  const RESET_COLOR = $("#reset_color");
+const RESET_COLOR = $("#reset_color");
+RESET_COLOR.on('click', function() {
   $("#pixel_canvas td").removeAttr("bgcolor");
-}
+})
 
 // When size is submitted by the user, call makeGrid() and prevents browser default behaviours
 SUBMIT_BUTTON.click(function(f) {
   f.preventDefault();
   makeGrid();
-});
-
-// Resets the grid
-const RESET_BUTTON = $("input[type = 'reset']");
-RESET_BUTTON.click(function(r) {
-  r.preventDefault();
-  resetGrid();
 });
 
 // Extra: Sound effects
