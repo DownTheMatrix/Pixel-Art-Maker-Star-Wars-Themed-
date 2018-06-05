@@ -1,24 +1,47 @@
-# Pixel-Art-Maker-Star-Wars-Themed-
-Google/Udacity Front-End Scholarship 2017
+# Galactic Pixel Art Maker
 
-Project description and requirements taken from the Udacity website:
+## Overview
+This is a project for my Udacity/Google FEND Scholarship Nanodegree Program.
 
-What Will I Build?
-You’ll build a single-page web app that allows users to draw pixel art on a customizable canvas!
-You'll be given starter code, including HTML and CSS, to build the application. You'll write JavaScript code that lets the user to create a grid of squares representing their design, and apply colors to those squares to create a digital masterpiece!
+![App Screen](https://github.com/DownTheMatrix/Pixel-Art-Maker-Star-Wars-Themed-/blob/master/Screenshot.png?raw=true)
 
-Your users should be able to:
+### How To Run The App
++ Clone the repository to your local machine or download the project as a .zip file
++ Don't alter the folder/files disposition
++ Click on the index.html file to open the app in your browser
 
-Dynamically set the size of the table as an N by M grid.
-Choose a color.
-Click a cell in the grid to fill that cell with the chosen color.
-Your primary task is to implement the makeGrid() function, that dynamically creates a grid that the user can interact with.
+In case you run into some issues, and cannot display the app correctly, try running it in a local server. 
+To launch a local server, choose one of the following methods: 
 
-What Skills Do I Need?
-In this project, you'll use your front-end programming skills from JavaScript Foundations and Intro to jQuery, including:
++ Launch a local server with Python (open the console and type):
 
-Defining variables with const and let
-Accessing the DOM using methods of the document object
-Declaring functions and attaching them to DOM objects as event listeners
-Writing nested loops and using loop variables
-Although not a requirement, you are encouraged to use jQuery to manipulate the DOM for this project.
+  `python -m http.server` (for Python 3x);
+  
+  `python -m SimpleHTTPServer` (for Python 2x);
+
+Then move to the default address `http://localhost:8000`.
+
++ Launch a local server with Node (open the node.js console and type):
+
+  `http-server`
+
+As above, the default address is `http://localhost:8000`.
+
+Alternatively, you can try it out here: [Live Demo](https://downthematrix.github.io/Pixel-Art-Maker-Star-Wars-Themed-/.)
+
+### App Overview
+The user can interact with the input boxes and create a grid with the chosen amount of rows and columns (at the moment, the grid cannot exceed a size of 50x50).
+
+#### Instructions
+After defining the number of rows and columns for the grid, the user can pick a color and left click on the grid tiles to draw a figure. Double-clicking will result in restoring the tile to the default white color. More buttons are present: the RESET COLOR button will restore all the grid tiles to the default white color, and the RESET GRID button will hide the grid from the screen, allowing the user to create a new one.
+
+#### Code Dependencies
+The project is realized using HTML5, CSS and jQuery. 
+
+##### Todo
+I plan to add a few features in the future to make the app more customizable: 
+
++ Increase the grid size
++ Icons for the buttons
++ Interactive background images
++ Extra features
