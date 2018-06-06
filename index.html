@@ -12,29 +12,31 @@
 <!-- Main Content -->
 <body>
   <h1 id="logo" class="run-animation">Galactic Pixel Art Maker</h1>
-
   <h2 class="run-animation">Choose Grid Size</h2>
   <p id="grid_limit">[Maximum grid size is 50x50!]</p>
 
+  <!-- Form -->
   <form id="sizePicker">
     Rows:
     <input type="number" id="input_height" name="height" min="1" max="50" value="10"> 
     Columns:
     <input type="number" id="input_width" name="width" min="1" max="50" value="10">
 
-    <span onclick="PlaySound('lightSaberOn')">
+    <span>
       <input type="submit" value="Create Grid" class="input1">
     </span>
 
-    <span onclick="PlaySound('lightSaberOff')">
+    <span>
       <input type="reset" value="Reset Grid" class="input2">
     </span>
   </form>
 
+  <!-- Color -->
   <h2 class="run-animation">Pick A Color</h2>
   <input type="color" id="colorPicker">
   <button id="reset_color" class="button1">Reset Color</button>
 
+  <!-- Create Grid -->
   <h2 class="run-animation">Design Canvas</h2>
   <table id="pixel_canvas"></table>
   <hr id="bottom_padding">
@@ -45,7 +47,7 @@
     <li>Single click to draw</li>
     <li>Double click to erase</li>
   </ul>
-  <button class="button4" onclick="toggleMusic();">Toggle Music On/Off</button>
+  <button class="button4">Toggle Music On/Off</button>
 
   <!-- Audio Files -->
   <audio loop id='rancorEgg' src='http://www.thesoundarchive.com/starwars/imperial_march.mp3' /></audio>
