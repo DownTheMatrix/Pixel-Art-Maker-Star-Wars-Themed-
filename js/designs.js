@@ -74,6 +74,10 @@ SUBMIT_BUTTON.click(function(f) {
   makeGrid();
 });
 
+// Background music
+const bgMusic = document.querySelector('.button4');
+bgMusic.addEventListener('click', toggleMusic);
+
 // Extra: Sound effects
 function PlaySound(soundobj) {
   const thissound = document.getElementById(soundobj);
