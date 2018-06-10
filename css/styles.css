@@ -29,6 +29,7 @@ h2:first-of-type {
   margin-top: 0.5em;
 }
 
+/* Grid */
 table,
 tr,
 td {
@@ -49,6 +50,7 @@ td {
   width: 20px;
 }
 
+/* Form */
 input[type="number"] {
   width: 6em;
   background-color: darkslategrey;
@@ -185,3 +187,7 @@ li:before {
 li {
   color: #008b8b;
 }
+
+/* Todo
+@ Add media queries for smaller devices
+*/
