@@ -33,13 +33,13 @@ h2:first-of-type {
 table,
 tr,
 td {
-  border: 2px solid grey;
+  border: 2px solid rgb(48, 78, 78);
 }
 
 table {
   border-collapse: collapse;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff;
 }
 
 tr {
@@ -53,7 +53,7 @@ td {
 /* Form */
 input[type="number"] {
   width: 6em;
-  background-color: darkslategrey;
+  background-color: rgb(48, 78, 78);
   text-align: center;
   border-radius: 6px;
   color: #fff;
@@ -61,7 +61,7 @@ input[type="number"] {
 }
 
 input[type="submit"] {
-  background-color: grey;
+  background-color: rgb(143, 140, 140);
   padding: 0.5em;
 }
 
@@ -73,7 +73,7 @@ input[type="reset"] {
 #bottom_padding {
   border: 1px;
   height: 0;
-  box-shadow: 0 0 10px 1px black;
+  box-shadow: 0 0 10px 1px #000;
   width: 6cm;
 }
 
@@ -83,6 +83,7 @@ input[type="reset"] {
 
 #colorPicker {
   border-radius: 8px;
+  padding: 0.5em;
 }
 
 /* h1, h2 animation (inspiration:https://css-tricks.com/restart-css-animation/) */
@@ -111,7 +112,7 @@ input[type="reset"] {
 /* button and input styling (inspiration:https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover) */
 
 .button1 {
-  background-color: white;
+  background-color: #fff;
   color: black;
   border: 2px solid #4caf50;
   border-radius: 6px;
@@ -124,8 +125,8 @@ input[type="reset"] {
 }
 
 .input1 {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
   border: 2px solid #4caf50;
   border-radius: 6px;
 }
@@ -136,7 +137,7 @@ input[type="reset"] {
 }
 
 .input2 {
-  background-color: white;
+  background-color: #fff;
   color: black;
   border: 2px solid #4caf50;
   border-radius: 6px;
