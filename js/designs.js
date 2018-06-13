@@ -11,7 +11,7 @@ function makeGrid() {
   // Clears the table
   GRID.children().remove();
 
-  // Limit the grid size to avoid browser          crash
+  // Limit the grid size to avoid browser crash
   if (COLUMNS <= 50 && ROWS <= 50) {
     // Adds new rows
     for (let i = 0; i < ROWS; i++) {
@@ -25,6 +25,7 @@ function makeGrid() {
     }
   }
 
+  // Selects the grid tile
   tile = GRID.find("td");
 
   // Allows the interaction with the grid
@@ -41,7 +42,7 @@ function makeGrid() {
     $(this).removeAttr("bgcolor");
   });
 
-  // Executes the action on the table and   allows  the colour selection
+  // Executes the action on the table and   allows  the color selection
   GRID.on("click", "td", function() {
     const COLOR = $("input[type = 'color']#colorPicker").val();
     $(this).attr("background-color", COLOR);
@@ -55,7 +56,6 @@ const SUBMIT_BUTTON = $("input[type = 'submit']");
 function resetGrid() {
   $("#pixel_canvas").empty();
 }
-
 const RESET_BUTTON = $("input[type = 'reset']");
 RESET_BUTTON.click(function(r) {
   r.preventDefault();
